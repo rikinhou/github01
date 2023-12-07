@@ -7,6 +7,6 @@ stages:
   jobs:
   - job: ${{ parameters.name }}_Windows
     pool: 
-      vminage: vs2017-win2016
+    vminage: vs2017-win2016
     steps:
     - script: echo "this is template yaml! ${{ parameters.testfile }}"
