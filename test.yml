@@ -3,7 +3,7 @@ parameters:
   testfile: ''
 
 stages: 
-  stage: test_${{ parameters.name }}
+- stage: test_${{ parameters.name }}
   jobs:
   - job: ${{ parameters.name }}_Windows
     pool: 
