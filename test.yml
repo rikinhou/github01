@@ -1,6 +1,6 @@
 parameter:
-   name: ''
-   testfile: ''
+  name: ''
+  testfile: ''
 
 stages: 
 - stage: Test_${{ parameters.name }}
@@ -9,4 +9,4 @@ stages:
     pool: 
       vminage: vs2017-win2016
     steps:
-      - script: echo "this is template yaml! ${{ parameters.testfile }}"
+    - script: echo "this is template yaml! ${{ parameters.testfile }}"
